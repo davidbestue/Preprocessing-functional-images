@@ -63,6 +63,14 @@ Check [this](https://surfer.nmr.mgh.harvard.edu/fswiki/FsFastTutorialV5.1/FsFast
 scp -r davsan@akalla.cns.ki.se:~/Desktop/Distractor_project/imaging/David/encoding_mapping/run6/fmri3_Encoding_Ax.nii /home/david/Desktop/freesurfer/David/encoding/encoding_1/bold/001/f.nii
 ```
 
+You need the have the structural in the environment (check this [link](https://github.com/davidbestue/Retinotopy)
+
+```
+export SUBJECTS_DIR=/home/david/Desktop/freesurfer/David/structurals/struct_1
+cd $SUBJECTS_DIR
+cd /home/david/Desktop/freesurfer/David
+```
+
 Run the preprcessesing with the following line
 <br/>
 ```
