@@ -4,7 +4,7 @@ This files run the same preprocessing JOB in all the runs. The preprocessed outp
 <br/>
 + ***nocfmri3_Encoding_Ax.nii*** for the encoding
 <br/>
-+ ***nocfmri5_task_Ax.nii*** for the working memory task
++ nocfmri5_task_Ax.nii for the working memory task
 <br/>
 
 If you want to explore the JOB for a single run in the UI of **SPM**, you can open the **batch_1.m**.
