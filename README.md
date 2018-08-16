@@ -2,7 +2,6 @@
 Matlab preprocessing batches for the encoding **encoding_jobs_d001_akalla.m** and for working memory **WM_jobs_d001_akalla.m**
 
 This files run the same preprocessing JOB in all the runs. The preprocessed output that we are interested on are :  
-<br/>
 + ***nocfmri3_Encoding_Ax.nii*** for the encoding
 + ***nocfmri5_task_Ax.nii*** for the working memory task
 <br/>
