@@ -72,6 +72,12 @@ preproc-sess -s encoding_1 -fsd bold -surface self lhrh -mni305 -fwhm 5 -per-run
 In case you have more than one session, you would need to register the others to the encoding_1 template with the 
 spmregister function
 
+```
+Example:
+
+spmregister --fsvol /home/david/Desktop/freesurfer/David/encoding/encoding_1/bold/001/template.nii.gz --mov /home/david/Desktop/freesurfer/David/encoding/encoding_1/bold/002/fmcpr.nii.gz --reg /home/david/Desktop/freesurfer/David/encoding/encoding_1/bold/002/register_templ_enc1.dat --o /home/david/Desktop/freesurfer/David/encoding/encoding_1/bold/002/regfmcpr.nii.gz
+```
+
 <br/>
 Required Arguments:
 <br/>
@@ -105,25 +111,5 @@ Optional Arguments
    <br/>
    --help    : print help and exit
    <br/>
-
-
-```
-Example:
-
-spmregister --fsvol /home/david/Desktop/freesurfer/David/encoding/encoding_1/bold/001/template.nii.gz --mov /home/david/Desktop/freesurfer/David/encoding/encoding_1/bold/002/fmcpr.nii.gz --reg /home/david/Desktop/freesurfer/David/encoding/encoding_1/bold/002/register_templ_enc1.dat --o /home/david/Desktop/freesurfer/David/encoding/encoding_1/bold/002/regfmcpr.nii.gz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
