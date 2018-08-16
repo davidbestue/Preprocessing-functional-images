@@ -11,11 +11,10 @@ If you want to explore the JOB for a single run in the UI of **SPM**, you can op
 ### Job details
 + **Realign: Estimate**
 + **Slice timming**
-<br/>
 Session:realigned images dependency
-<br/>
 Interleaved in our case [1:2:47 2:2:47]
-+ **Corregister: Estimate**
+<br/>
++**Corregister: Estimate**
 <br/>
 Ref: Sag_T1w3D_BRAVO.nii (structural image: ***you get in when you use dcm2nii in the structurals .dcm***)
 <br/>
