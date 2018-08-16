@@ -49,6 +49,76 @@ If you want to explore the JOB for a single run in the UI of **SPM**, you can op
 
 # Preprocessing Freesurfer
 
+Transfor the .dcm to .nii and move it to the local with
+<br/>
+The directory structure is the following:
+<br/>
+/home/david/Desktop/freesurfer/David/encoding/encoding_1, sessidlist
+<br/>
+/home/david/Desktop/freesurfer/David/encoding/encoding_1/bold, subjectname
+<br/>
+Check [this](https://surfer.nmr.mgh.harvard.edu/fswiki/FsFastTutorialV5.1/FsFastDirStruct) for more details about structure.
+
+```
+scp -r davsan@akalla.cns.ki.se:~/Desktop/Distractor_project/imaging/David/encoding_mapping/run6/fmri3_Encoding_Ax.nii /home/david/Desktop/freesurfer/David/encoding/encoding_1/bold/001/f.nii
+```
+
+Run the preprcessesing with the following line
+<br/>
+```
+preproc-sess -s encoding_1 -fsd bold -surface self lhrh -mni305 -fwhm 5 -per-run
+```
+
+In case you have more than one session, you would need to register the others to the encoding_1 template with the 
+spmregister function
+
+<br/>
+Required Arguments:
+<br/>
+   --s subjid   or  --fsvol full/path/to.mgz 
+   <br/>
+   --mov volid  : input/movable volume
+   <br/>
+   --reg register.dat
+   <br/>
+
+Optional Arguments
+<br/>
+   --frame frameno : reg to frameno (default 0=1st)
+   <br/>
+   --mid-frame : reg to middle frame (not with --frame)
+   <br/>
+   --template-out template : save template (good with --frame)
+   <br/>
+   --fsvol volid : use FreeSurfer volid (default brainmask)
+   <br/>
+   --force-ras : force input geometry to be RAS
+   <br/>
+   --o outvol : resample mov and save as outvol
+   <br/>
+
+   --tmp tmpdir  : temporary dir (implies --nocleanup)
+   <br/>
+   --nocleanup  : do not delete temporary files
+   <br/>
+   --version : print version and exit
+   <br/>
+   --help    : print help and exit
+   <br/>
+
+
+```
+Example:
+
+spmregister --fsvol /home/david/Desktop/freesurfer/David/encoding/encoding_1/bold/001/template.nii.gz --mov /home/david/Desktop/freesurfer/David/encoding/encoding_1/bold/002/fmcpr.nii.gz --reg /home/david/Desktop/freesurfer/David/encoding/encoding_1/bold/002/register_templ_enc1.dat --o /home/david/Desktop/freesurfer/David/encoding/encoding_1/bold/002/regfmcpr.nii.gz
+
+
+
+
+
+
+
+
 
 
 
