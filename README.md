@@ -10,32 +10,39 @@ If you want to explore the JOB for a single run in the UI of **SPM**, you can op
 
 ### Job details
 + **Realign: Estimate**
+
 + **Slice timming**
+      <br/>
       Session:realigned images dependency
       <br/>
       Interleaved in our case [1:2:47 2:2:47]
       <br/>
 
 + **Corregister: Estimate**
-<br/>
-Ref: Sag_T1w3D_BRAVO.nii (structural image: ***you get in when you use dcm2nii in the structurals .dcm***)
-<br/>
-Source: Slice timing dependency
-<br/>
-Other images: Slice timing dependency
+      <br/>
+      Ref: Sag_T1w3D_BRAVO.nii (structural image: ***you get in when you use dcm2nii in the structurals .dcm***)
+      <br/>
+      Source: Slice timing dependency
+      <br/>
+      Other images: Slice timing dependency
+      <br/>
+     
 + **Corregister:Estimate and reslice**
-<br/>
-Ref: template.nii (from the encoding_1/bold/001/template.nii). This is the functio
-<br/>
-Source: Corregistered dependency
-<br/>
-Other images: Corregistered dependency
+      <br/>
+      Ref: template.nii (from the encoding_1/bold/001/template.nii). This is the functio
+      <br/>
+      Source: Corregistered dependency
+      <br/>
+      Other images: Corregistered dependency
+      <br/>
+     
 + **Smooth**
-<br/>
-Resliced Dependency
-<br/>
-[4 4 4]
-
+      <br/>
+      Resliced Dependency
+      <br/>
+      [4 4 4]
+ 
+ 
 
 <br/>
 <br/>
