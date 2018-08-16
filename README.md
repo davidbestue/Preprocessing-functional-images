@@ -11,10 +11,10 @@ If you want to explore the JOB for a single run in the UI of **SPM**, you can op
 ### Job details
 + **Realign: Estimate**
 + **Slice timming**
-<br/>
-Session:realigned images dependency
-Interleaved in our case [1:2:47 2:2:47]
-<br/>
+      Session:realigned images dependency
+      <br/>
+      Interleaved in our case [1:2:47 2:2:47]
+      <br/>
 
 + **Corregister: Estimate**
 <br/>
