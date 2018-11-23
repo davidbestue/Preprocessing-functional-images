@@ -68,7 +68,7 @@ You need the have the structural in the environment (check this [link](https://g
 ```
 export SUBJECTS_DIR=/home/david/Desktop/freesurfer/David/structurals/struct_1
 cd $SUBJECTS_DIR
-cd /home/david/Desktop/freesurfer/David
+cd /home/david/Desktop/freesurfer/David/encoding
 ```
 
 Run the preprcessesing with the following line
